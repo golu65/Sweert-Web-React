@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,7 +34,33 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+
+
+.Card {
+  display: flex;
+  background-color: #F3F1FF;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    display: block;
+  }
+}
+
+.Box {
+ 
+  display: flex;
+  flex-direction: column;
+
+@media (max-width: 800px) {
+    align-items: center;
+    display: block;
+  }
+}
+
+
